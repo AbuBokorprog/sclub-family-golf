@@ -251,8 +251,11 @@ video {
   width: 100%;
   background: linear-gradient(to left bottom, #62f103, #a7d724);
   display: flex;
+  position: relative;
+  z-index: 10;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
 }
 
 #banner img {
@@ -301,4 +304,75 @@ video {
 #page3 #colon2 {
   right: 15%;
   bottom: 15%;
+}
+
+#page4 {
+  height: 50vh;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  z-index: 10;
+  margin: 50px 0;
+}
+
+#page4 h4 {
+  color: #000;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  -webkit-text-stroke: 2px white;
+}
+
+#card-container-img {
+  text-align: center;
+  gap: 30px;
+  position: absolute;
+  top: 50px;
+  left: 105px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#card-img1 {
+  height: 130px;
+  width: 330px;
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1536x1025.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#card-img2 {
+  height: 130px;
+  width: 330px;
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1536x1025.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#card-img3 {
+  height: 130px;
+  width: 330px;
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1536x1022.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.overlay-img p {
+  height: 130px;
+  width: 330px;
+  color: #000;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: #95c11e;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+.overlay-img:hover p {
+  background: transparent;
+  color: #fff;
 }
