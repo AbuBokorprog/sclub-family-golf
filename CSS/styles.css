@@ -12,6 +12,22 @@ body {
   width: 100%;
 }
 
+*::selection {
+  background-color: #ace022;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  background: linear-gradient(to bottom, #119f3a, #ace022);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
 #nav {
   height: 145px;
   width: 100%;
@@ -375,4 +391,11 @@ video {
 .overlay-img:hover p {
   background: transparent;
   color: #fff;
+}
+#footer {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a, #ace022);
+  position: relative;
+  z-index: 99;
 }
