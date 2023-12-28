@@ -45,18 +45,19 @@ const crs = document.querySelector("#cursor");
 const crsBlur = document.querySelector("#cursor-blur");
 
 document.addEventListener("mousemove", function (dets) {
-  crs.style.left = dets.x + 30 + "px";
-  crs.style.top = dets.y + "px";
+  crs.style.left = dets.x + 15 + "px";
+  crs.style.top = dets.y + 20 + "px";
   crsBlur.style.left = dets.x - 250 + "px";
   crsBlur.style.top = dets.y - 270 + "px";
 });
 
-let h4all = document.querySelectorAll("#nav h4");
+let h4all = document.querySelectorAll("#nav h4, #footer-container h4");
 h4all.forEach(function (elem) {
   elem.addEventListener("mouseenter", function () {
     crs.style.scale = 3;
     crs.style.border = "1px solid #fff";
     crs.style.backgroundColor = "transparent";
+    // crs.style.transition = "all linear 0.5s";
   });
   elem.addEventListener("mouseleave", function () {
     crs.style.scale = 1;
@@ -115,8 +116,7 @@ tl.from(".card", {
   },
 });
 
-// colon1
-gsap.from("#colon1", {
+tl.from("#colon1", {
   y: -50,
   x: -50,
   opacity: 0,
@@ -124,12 +124,9 @@ gsap.from("#colon1", {
   scrollTrigger: {
     trigger: "#colon1",
     scroller: "#main",
-    // start: "top 80%",
-    // end: "top 50%",
-    // scrub: 1,
   },
 });
-gsap.from("#colon2", {
+tl.from("#colon2", {
   y: 50,
   x: 50,
   opacity: 0,
@@ -137,22 +134,16 @@ gsap.from("#colon2", {
   scrollTrigger: {
     trigger: "#colon2",
     scroller: "#main",
-    // markers: true,
-    // start: "top 80%",
     end: "top 80%",
-    // scrub: 1,
   },
 });
-gsap.from("#page4 h4", {
+tl.from("#page4 h4", {
   y: 50,
   opacity: 0,
   duration: 1,
   scrollTrigger: {
     trigger: "#page4",
     scroller: "#main",
-    // markers: true,
-    // start: "top 80%",
     end: "top 80%",
-    // scrub: 1,
   },
 });

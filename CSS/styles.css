@@ -55,6 +55,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   position: fixed;
   z-index: 99;
+  /* transition: all  0.1s; */
 }
 #cursor-blur {
   height: 300px;
@@ -393,9 +394,55 @@ video {
   color: #fff;
 }
 #footer {
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background: linear-gradient(to left bottom, #119f3a, #ace022);
   position: relative;
   z-index: 99;
+}
+#footer img {
+  height: 250px;
+  width: 300px;
+  position: absolute;
+}
+
+#footer-container {
+  display: flex;
+  gap: 180px;
+  justify-content: center;
+  align-items: start;
+  padding-top: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+#footer1 img {
+  height: 100px;
+  width: 100px;
+}
+
+#footer-container h4 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #000;
+}
+
+#footer-container h4:hover {
+  color: #fff;
+}
+
+#footer-container p,
+#footer-end p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+#footer-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 10;
 }
