@@ -55,7 +55,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   position: fixed;
   z-index: 99;
-  /* transition: all  0.1s; */
 }
 #cursor-blur {
   height: 300px;
@@ -445,4 +444,179 @@ video {
   justify-content: space-evenly;
   position: relative;
   z-index: 10;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #nav {
+    height: 135px;
+    padding: 0;
+    padding-bottom: 60px;
+    gap: 0px;
+  }
+  #nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  #page1 h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  #page1 h2 {
+    font-size: 20px;
+  }
+
+  #page1 p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+  }
+  #scroll h4 {
+    font-size: 60px;
+  }
+  #about-us {
+    display: block;
+    justify-content: center;
+  }
+  #about {
+    text-align: center;
+    width: 100%;
+  }
+  #about h3 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  #about p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  #about-us img {
+    height: 170px;
+    width: 330px;
+  }
+  #cards-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    /* z-index: 99; */
+  }
+  .card {
+    height: 30%;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .overlay h4 {
+    font-size: 25px;
+  }
+  #banner {
+    height: 40vh;
+    width: 100%;
+  }
+
+  #banner img {
+    height: 80%;
+    width: 14%;
+  }
+
+  #banner p {
+    width: 50%;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  #page3 {
+    padding: 150px 0;
+  }
+  #page3 > p {
+    font-size: 20px;
+    width: 80%;
+    line-height: 35px;
+  }
+
+  #page3 img {
+    height: 50px;
+  }
+  #page4 {
+    height: 80vh;
+    width: 100%;
+  }
+
+  #page4 h4 {
+    font-size: 25px;
+  }
+  #card-container-img {
+    text-align: center;
+    gap: 30px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+    position: relative;
+    z-index: 99;
+    padding: 0px 20px;
+  }
+  #footer img {
+    height: 150px;
+    width: 200px;
+    position: absolute;
+  }
+
+  #footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    z-index: 10;
+
+    padding-bottom: 50px;
+  }
+
+  #footer1 img {
+    height: 100px;
+    width: 100px;
+  }
+  #footer2 {
+    margin-top: 80px;
+  }
+
+  #footer-container h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
